@@ -19,7 +19,7 @@ while True:
 						'team': { 'id': [3] },
 						'sensor': {
 							'id': [0],
-							'state': [true],
+							'state': [1],
 							'value': [1]
 							}
 					}
