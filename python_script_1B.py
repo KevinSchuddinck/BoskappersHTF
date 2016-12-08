@@ -18,8 +18,8 @@ while True:
 			data = {
 						team: { id: [3] },
 						sensor: {
-							id: [0]
-							state: [true]
+							id: [0],
+							state: [true],
 							value: [1]
 							}
 					})
