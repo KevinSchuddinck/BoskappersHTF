@@ -15,7 +15,7 @@ headers = {"team", "sensor"}
 while True:
     try:
         if grovepi.digitalRead(button):
-			data = {
+			stats = {
 						'team': { 'id': [3] },
 						'sensor': {
 							'id': [0],
@@ -23,7 +23,7 @@ while True:
 							'value': [1]
 							}
 					}
-			r = requests.post(url, headers, stats = json.dumps(data))
+			r = requests.post(url, headers, data = json.dumps(stats))
 			print(r.text)
 			grovepi.digitalWrite(buzzer,1)
 			time.sleep(1)
