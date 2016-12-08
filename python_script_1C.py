@@ -16,7 +16,8 @@ switch = 1
 
 while True:
     try:
-	if switch :
+	if switch == 1:
+		print('')
         if grovepi.digitalRead(button):
 			stats = {
 						'team': { 'id': [3] },
