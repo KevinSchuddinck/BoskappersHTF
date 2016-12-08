@@ -29,6 +29,7 @@ while True:
 			r = requests.post(url, headers = headers, data = json.dumps(stats))
 			print(r.text)
 			grovepi.digitalWrite(buzzer,1)
+			switch = 0
 			#time.sleep(1)
 			#grovepi.digitalWrite(buzzer,0)
 	else:
@@ -44,6 +45,7 @@ while True:
 			r = requests.post(url, headers = headers, data = json.dumps(stats))
 			print(r.text)
 			grovepi.digitalWrite(buzzer,0)
+			switch = 1
 		
 		
     except IOError:
