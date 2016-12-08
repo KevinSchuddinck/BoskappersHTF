@@ -16,11 +16,11 @@ while True:
     try:
         if grovepi.digitalRead(button):
 			data = {
-						team: { id: [3] },
-						sensor: {
-							id: [0],
-							state: [true],
-							value: [1]
+						'team': { 'id': [3] },
+						'sensor': {
+							'id': [0],
+							'state': [true],
+							'value': [1]
 							}
 					}
 			r = requests.post(url, headers, stats = json.dumps(data))
