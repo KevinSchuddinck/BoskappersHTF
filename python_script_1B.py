@@ -16,7 +16,7 @@ while True:
     try:
         if grovepi.digitalRead(button):
 			data = {
-						team: { id: [3] }
+						team: { id: [3] },
 						sensor: {
 							id: [0]
 							state: [true]
