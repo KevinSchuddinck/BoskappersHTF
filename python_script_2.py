@@ -12,8 +12,10 @@ threshold_value = 55
 
 while True:
 	try:
+		#measured_values = []
+		
 		temp = grovepi.analogRead(sound_sensor)
-		sensor_value = (20 * math.log10(temp + 1) )
+		sensor_value = round( (20 * math.log10(temp + 1) ) , 2)
 		print(sensor_value)
 		if sensor_value > threshold_value :
 			print('ALARM!')
