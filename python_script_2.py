@@ -17,7 +17,8 @@ while True:
 			grovepi.digitalWrite(buzzer,1)
 			time.sleep(1)
 			grovepi.digitalWrite(buzzer,0)
-		
-		time.sleep(.5)
+		else:
+			time.sleep(.5)
+			
 	except IOError:
 		print('Error')
