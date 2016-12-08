@@ -24,6 +24,7 @@ while True:
 							}
 					})
 			r = requests.post(url, headers, stats = json.dumps(data))
+			print(r.text)
 			grovepi.digitalWrite(buzzer,1)
 			time.sleep(1)
 			grovepi.digitalWrite(buzzer,0)
