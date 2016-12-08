@@ -10,7 +10,7 @@ buzzer = 8
 grovepi.pinMode(buzzer, "OUTPUT")
 
 url = 'http://192.168.50.148:4000/api'
-headers = {"team", "sensor"}
+headers = {"content", "application/json"}
 
 while True:
     try:
@@ -23,7 +23,7 @@ while True:
 							'value': [1]
 							}
 					}
-			r = requests.post(url, headers, data = json.dumps(stats))
+			r = requests.post(url, header = headers, data = json.dumps(stats))
 			print(r.text)
 			grovepi.digitalWrite(buzzer,1)
 			time.sleep(1)
