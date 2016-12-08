@@ -22,7 +22,7 @@ while True:
 							state: [true],
 							value: [1]
 							}
-					})
+					}
 			r = requests.post(url, headers, stats = json.dumps(data))
 			print(r.text)
 			grovepi.digitalWrite(buzzer,1)
