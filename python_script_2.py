@@ -11,6 +11,6 @@ while True:
 		temp = grovepi.analogRead(sound_sensor)
 		sensor_value = (20 * math.log10(temp + 1) )
 		print(sensor_value)
-		time.sleep(2)
+		time.sleep(.5)
 	except IOError:
 		print('Error')
