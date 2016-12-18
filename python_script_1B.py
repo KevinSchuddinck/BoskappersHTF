@@ -20,7 +20,7 @@ while True:
 						'sensor': {
 							'id': [0],
 							'state': [1],
-							'value': [1]
+							'value': ['ALARM']
 							}
 					}
 			r = requests.post(url, headers = headers, data = json.dumps(stats))
